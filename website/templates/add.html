@@ -1,0 +1,26 @@
+<!--add an Item to the invetory-->
+{% extends "base3.html" %}
+
+{% block content %}
+<div class="column is-4 is-offset-4">
+    <h3 class="title">Add Item </h3>
+    <div class="box">
+        <form action="/add" method="POST">
+           
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="description" placeholder="description">
+                </div>
+            </div>
+
+            <button class="button is-block is-info is-large is-fullwidth">Add</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
